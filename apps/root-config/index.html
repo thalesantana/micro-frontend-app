@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micro Frontend App</title>
+</head>
+<body>
+  <div id="single-spa-application:root-config"></div>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@org/login-app": "http://localhost:3001/index.js",
+        "@org/home-app": "http://localhost:3002/index.js",
+        "@org/partners-app": "http://localhost:3003/index.js",
+        "@org/external-companies-app": "http://localhost:3004/index.js"
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

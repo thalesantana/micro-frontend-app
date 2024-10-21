@@ -1,18 +1,22 @@
 version: '3.8'
 services:
   login-app:
-    build: ./login-app
+    build: ./apps/login-app
     ports:
       - "3001:3000"
   home-app:
-    build: ./home-app
+    build: ./apps/home-app
     ports:
       - "3002:3000"
   partners-app:
-    build: ./partners-app
+    build: ./apps/partners-app
     ports:
       - "3003:3000"
   external-companies-app:
-    build: ./external-companies-app
+    build: ./apps/external-companies-app
     ports:
       - "3004:3000"
+  root-config:
+    build: ./apps/root-config
+    ports:
+      - "3000:3000"

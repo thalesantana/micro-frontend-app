@@ -1,0 +1,19 @@
+{
+  "name": "micro-frontend-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "dev:all": "turbo run dev --parallel",
+    "build:all": "turbo run build --parallel"
+  },
+  "devDependencies": {
+    "turbo": "^1.0.0"
+  },
+  "dependencies": {
+    "single-spa": "^6.0.3"
+  }
+}
