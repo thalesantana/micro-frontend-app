@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "jsx": "react",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@org/login-app": ["apps/login-app/src/main.tsx"],
+      "@org/home-app": ["apps/home-app/src/main.tsx"],
+      "@org/partners-app": ["apps/partners-app/src/main.ts"],
+      "@org/external-app": ["apps/external-app/src/main.tsx"]
+    }
+  },
+  "include": ["apps/**/*", "packages/**/*"]
+}

@@ -2,26 +2,26 @@ import { registerApplication, start } from 'single-spa';
 
 registerApplication({
   name: '@org/login-app',
-  app: () => System.import('@org/login-app'),
+  app: () => import('@org/login-app'),
   activeWhen: ['/login'],
 });
 
 registerApplication({
   name: '@org/home-app',
-  app: () => System.import('@org/home-app'),
+  app: () => import('@org/home-app'),
   activeWhen: ['/home'],
 });
 
 registerApplication({
   name: '@org/partners-app',
-  app: () => System.import('@org/partners-app'),
+  app: () => import('@org/partners-app'),
   activeWhen: ['/partners'],
 });
 
 registerApplication({
-  name: '@org/external-companies-app',
-  app: () => System.import('@org/external-companies-app'),
-  activeWhen: ['/external-companies'],
+  name: '@org/external-app',
+  app: () => import('@org/external-app'),
+  activeWhen: ['/external-app'],
 });
 
 start();

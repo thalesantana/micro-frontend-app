@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "single-spa-vue": "^3.0.0",
     "vue": "^3.5.10"
   },
   "devDependencies": {

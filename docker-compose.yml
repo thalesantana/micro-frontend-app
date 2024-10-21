@@ -12,8 +12,8 @@ services:
     build: ./apps/partners-app
     ports:
       - "3003:3000"
-  external-companies-app:
-    build: ./apps/external-companies-app
+  external-app:
+    build: ./apps/external-app
     ports:
       - "3004:3000"
   root-config:

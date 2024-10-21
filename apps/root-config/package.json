@@ -10,7 +10,8 @@
     "single-spa": "^6.0.3"
   },
   "devDependencies": {
-    "vite": "^2.6.4",
-    "typescript": "^4.4.3"
+    "@types/systemjs": "^6.15.1",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.4"
   }
 }
