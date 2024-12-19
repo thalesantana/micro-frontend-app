@@ -11,6 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
+      "@org/root-config": ["apps/root-config/src/index.ts"],
       "@org/login-app": ["apps/login-app/src/main.tsx"],
       "@org/home-app": ["apps/home-app/src/main.tsx"],
       "@org/partners-app": ["apps/partners-app/src/main.ts"],

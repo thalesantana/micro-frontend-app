@@ -3,7 +3,7 @@ import { registerApplication, start } from 'single-spa';
 registerApplication({
   name: '@org/login-app',
   app: () => import('@org/login-app'),
-  activeWhen: ['/login'],
+  activeWhen: ['/'],
 });
 
 registerApplication({
@@ -24,4 +24,6 @@ registerApplication({
   activeWhen: ['/external-app'],
 });
 
-start();
+start({
+  urlRerouteOnly: true,
+});

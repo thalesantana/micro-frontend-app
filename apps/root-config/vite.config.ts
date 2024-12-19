@@ -14,6 +14,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      "@org/root-config": resolve(__dirname, "../root-config/src/index.ts"),
       "@org/login-app": resolve(__dirname, "../login-app/src/main.tsx"),
       "@org/home-app": resolve(__dirname, "../home-app/src/main.tsx"),
       "@org/partners-app": resolve(__dirname, "../partners-app/src/main.ts"),
